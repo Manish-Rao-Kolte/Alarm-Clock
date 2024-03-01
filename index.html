@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="clockContainer">
+        <h2 id="curTime">
+
+        </h2>
+        <form id="inpBtnCont">
+            <div id="inputContainer">
+                <input type="number" name="hr" id="hr" placeholder="10" min="0" max="12">
+                <span>:</span>
+                <input type="number" name="mnt" id="mnt" placeholder="00" min="0" max="59">
+                <span>:</span>
+                <input type="number" name="sec" id="sec" placeholder="00" min="0" max="59">
+                <span>:</span>
+                <select name="mdm" id="meridiem">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <button id="setBtn">Set Alarm</button>
+        </form>
+        <div id="listContainer">
+            <h3 id="listHeading">Alarms</h3>
+            <ul id="alarmList">
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
