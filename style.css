@@ -17,19 +17,30 @@ input[type=number] {
     font-size: 1vmax;
 }
 
+body{
+    background-image: url("https://images.pexels.com/photos/696644/pexels-photo-696644.jpeg?auto=compress&cs=tinysrgb&w=1500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Styles for alarm clock */
 
 #clockContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    width: 20vw;
+    height: 60vh;
+    width: 23vw;
     margin: auto;
     margin-top: 7%;
     border: 2px solid black;
     border-radius: 18%;
     padding: 3% 2%;
+    box-sizing: border-box;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
 
     #curTime{
         font-size: 1.7vmax;
@@ -91,4 +102,8 @@ input[type=number] {
             }
         }
     }
+}
+button:hover{
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
